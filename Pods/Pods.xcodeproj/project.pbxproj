@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1296D7032FEB275246E0E2EB83D4E58C /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4CDC88E4BEEFF333996BBBA8925F0F /* OHHTTPStubsSwift.swift */; };
+		1ED85E627E4D06AFA96600F569E455DB /* OHHTTPStubsMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 87ED4F88B4FD5203E6E4A6F6B3EDEBEF /* OHHTTPStubsMethodSwizzling.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2DF93E32CB27E214194EC9AC1FDD956B /* OHPathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1EE4087E22EC98AF60B3167E44F4A0 /* OHPathHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3545AAC096798FF21985BFBD5217B460 /* Pods-swift-earlgrey-bootcamp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB9BAEFCF14D8B1BCBBAD58279205B /* Pods-swift-earlgrey-bootcamp-dummy.m */; };
+		3A81D90529CF791C1C6CD7C70EDD8ABE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72913984B3E4B2AD01F71E405D688036 /* Foundation.framework */; };
+		3BD01F8E61667B00047170FC27494FCE /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CB3C0A90AAF6B84B1370C03B5EC064 /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BACB4B297316467D77C8EC63CD50525 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72913984B3E4B2AD01F71E405D688036 /* Foundation.framework */; };
+		4CB7E2B0C8632933C7D85F62001A8E54 /* Pods-swift-earlgrey-bootcamp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A6AF0C01AC3FDCE0C62A09A54BB01A /* Pods-swift-earlgrey-bootcamp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BA61FFD060E57F79693F2341C329CDC /* OHHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 865DE88829EC0CA07431418B6BD2B401 /* OHHTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F513FA6EAA76CCBA9BF62B2CBCF98F /* Pods-swift-earlgrey-bootcampTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4920B52527F56166BCF3E5DD5E78E7 /* Pods-swift-earlgrey-bootcampTests-dummy.m */; };
+		6C9B33BB7CA816E3DDB0BD5AF81D90E2 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BF86E967C7ECCC8C28BBB4347D3256 /* OHHTTPStubs+NSURLSessionConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		76BDFCB4E7BECB554EA7FBF9FC0D7576 /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 238FC8B00E7CAEE96A032B861A4C4524 /* OHHTTPStubs-dummy.m */; };
+		8511E3F26B666561914F0DB11D1D116B /* Pods-swift-earlgrey-bootcampTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D668B59EEB1259E9E9B978326F351A7 /* Pods-swift-earlgrey-bootcampTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9548720C4DE49F518770CFE2B11DF780 /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = FC09A19A742E9B715C07608839BC9D4F /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65B51B819D87EA2E6F5A5ABE71C7FE6 /* NSURLRequest+HTTPBodyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = C22F78340A22D69056F5A58F9F27C948 /* NSURLRequest+HTTPBodyTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEC3DDBD63163C44B217D72F96BF431 /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 440639BA4986EFAD40267CA16E0CED29 /* OHHTTPStubs.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AE3D655A5F6F57A1748BA3AC8C138CA8 /* OHHTTPStubs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64EE5FAE431A1FB2A3B6B7F755DC229E /* OHHTTPStubs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBF98824C62AC3D4E7727B83F3E8B0A3 /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C310A8FEB66B86F48A14F055F6C8607 /* OHPathHelpers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CDF4CE481A3C924312F609D318B59E4C /* OHHTTPStubsMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5703A08F0D24CFE06DB572E117BD97F0 /* OHHTTPStubsMethodSwizzling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DA1AC76C093B07F235C538777FF602A9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46EFC5CDAF57A92A7B136FFD3525675 /* CFNetwork.framework */; };
+		DC76380881C3DE10E318E7D7CD60A9B6 /* OHHTTPStubsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6803E567B2AA5D5D0AB9E94A30BADB14 /* OHHTTPStubsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2AAC9FD0874A38F61F71033585807A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72913984B3E4B2AD01F71E405D688036 /* Foundation.framework */; };
+		F2A20C707DE9EA319D2701D0E543F420 /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627F419F724FA3D70C2B2A7533E2042 /* OHHTTPStubsResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F71753B13D3D22D95DC74CF578F74B07 /* NSURLRequest+HTTPBodyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = A3979FBB098FAE91DE0D936D2E82FBFF /* NSURLRequest+HTTPBodyTesting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F847F31E3971B4F7F45953086B6431F6 /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EB094CE7A65B8CD7CD9BC20A5852A3 /* OHHTTPStubsResponse+JSON.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74556C46F26A97DB189806C4D9566C5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 748F1C7F61D88F3FB355A8E829489671;
+			remoteInfo = OHHTTPStubs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C2482EDC5612E2A378593F16DAC6EF /* Pods-swift-earlgrey-bootcamp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swift-earlgrey-bootcamp-resources.sh"; sourceTree = "<group>"; };
+		04EB9BAEFCF14D8B1BCBBAD58279205B /* Pods-swift-earlgrey-bootcamp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swift-earlgrey-bootcamp-dummy.m"; sourceTree = "<group>"; };
+		0658365F1D9D28302B493BC26890C041 /* Pods-swift-earlgrey-bootcamp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-swift-earlgrey-bootcamp.modulemap"; sourceTree = "<group>"; };
+		0B1EE4087E22EC98AF60B3167E44F4A0 /* OHPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHPathHelpers.h; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h; sourceTree = "<group>"; };
+		148B44A54B06A48AAECD98B16F28E8C8 /* OHHTTPStubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.xcconfig; sourceTree = "<group>"; };
+		19ADF38771D34F6C27343A12347892FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238FC8B00E7CAEE96A032B861A4C4524 /* OHHTTPStubs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-dummy.m"; sourceTree = "<group>"; };
+		3627F419F724FA3D70C2B2A7533E2042 /* OHHTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsResponse.m; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.m; sourceTree = "<group>"; };
+		371D8FD0038A04C457F9BE15B78A03D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440639BA4986EFAD40267CA16E0CED29 /* OHHTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubs.m; path = OHHTTPStubs/Sources/OHHTTPStubs.m; sourceTree = "<group>"; };
+		44DD2443C5BBAD3E8106945365E7D892 /* Pods-swift-earlgrey-bootcamp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swift-earlgrey-bootcamp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49F1A38B171918E00E474EA1212B15EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5703A08F0D24CFE06DB572E117BD97F0 /* OHHTTPStubsMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsMethodSwizzling.m; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.m; sourceTree = "<group>"; };
+		5D4CDC88E4BEEFF333996BBBA8925F0F /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHHTTPStubsSwift.swift; path = OHHTTPStubs/Sources/Swift/OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
+		62CB3C0A90AAF6B84B1370C03B5EC064 /* OHHTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubsResponse+JSON.h"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
+		64EE5FAE431A1FB2A3B6B7F755DC229E /* OHHTTPStubs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-umbrella.h"; sourceTree = "<group>"; };
+		6803E567B2AA5D5D0AB9E94A30BADB14 /* OHHTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsResponse.h; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.h; sourceTree = "<group>"; };
+		6C310A8FEB66B86F48A14F055F6C8607 /* OHPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHPathHelpers.m; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.m; sourceTree = "<group>"; };
+		6CF9196965EE5F36814E00B8C6D55149 /* Pods-swift-earlgrey-bootcampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-earlgrey-bootcampTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D668B59EEB1259E9E9B978326F351A7 /* Pods-swift-earlgrey-bootcampTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swift-earlgrey-bootcampTests-umbrella.h"; sourceTree = "<group>"; };
+		6E6ACF9DB98D34E603C62F27376C0FB6 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72913984B3E4B2AD01F71E405D688036 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		72C05441C543BB85633B937FC718ACE0 /* OHHTTPStubs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-prefix.pch"; sourceTree = "<group>"; };
+		784365A7C22D0319D14355DA26178825 /* Pods_swift_earlgrey_bootcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_swift_earlgrey_bootcampTests.framework; path = "Pods-swift-earlgrey-bootcampTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		827D5655C6102CCC45596B54DC8BE273 /* Pods-swift-earlgrey-bootcamp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swift-earlgrey-bootcamp-frameworks.sh"; sourceTree = "<group>"; };
+		865DE88829EC0CA07431418B6BD2B401 /* OHHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubs.h; path = OHHTTPStubs/Sources/OHHTTPStubs.h; sourceTree = "<group>"; };
+		87ED4F88B4FD5203E6E4A6F6B3EDEBEF /* OHHTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsMethodSwizzling.h; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3979FBB098FAE91DE0D936D2E82FBFF /* NSURLRequest+HTTPBodyTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+HTTPBodyTesting.m"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.m"; sourceTree = "<group>"; };
+		A40A75113487A8AE9956C4C9514CE0CA /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
+		AB16B32473CC2E2349E1997807B23346 /* Pods-swift-earlgrey-bootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-earlgrey-bootcamp.release.xcconfig"; sourceTree = "<group>"; };
+		B94F8F474A1EF83A4301D665DAD5FCBB /* Pods-swift-earlgrey-bootcamp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swift-earlgrey-bootcamp-acknowledgements.plist"; sourceTree = "<group>"; };
+		C054F2D1C998BD71F3AACCCC513A4CC5 /* Pods-swift-earlgrey-bootcampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-earlgrey-bootcampTests.release.xcconfig"; sourceTree = "<group>"; };
+		C22F78340A22D69056F5A58F9F27C948 /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
+		C8017F65380A274C56E40AD8C9EB015E /* Pods-swift-earlgrey-bootcampTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swift-earlgrey-bootcampTests-frameworks.sh"; sourceTree = "<group>"; };
+		CB720D1467365A7EE315107D08E9B1E3 /* Pods_swift_earlgrey_bootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_swift_earlgrey_bootcamp.framework; path = "Pods-swift-earlgrey-bootcamp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EB094CE7A65B8CD7CD9BC20A5852A3 /* OHHTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubsResponse+JSON.m"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
+		DB4920B52527F56166BCF3E5DD5E78E7 /* Pods-swift-earlgrey-bootcampTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swift-earlgrey-bootcampTests-dummy.m"; sourceTree = "<group>"; };
+		DDD68108982D786F3F7D63475C71BBD3 /* Pods-swift-earlgrey-bootcampTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swift-earlgrey-bootcampTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E32ADB2E898817C4A9574E54C39936FF /* Pods-swift-earlgrey-bootcampTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swift-earlgrey-bootcampTests-resources.sh"; sourceTree = "<group>"; };
+		E7A6AF0C01AC3FDCE0C62A09A54BB01A /* Pods-swift-earlgrey-bootcamp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swift-earlgrey-bootcamp-umbrella.h"; sourceTree = "<group>"; };
+		E7BF86E967C7ECCC8C28BBB4347D3256 /* OHHTTPStubs+NSURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubs+NSURLSessionConfiguration.m"; path = "OHHTTPStubs/Sources/NSURLSession/OHHTTPStubs+NSURLSessionConfiguration.m"; sourceTree = "<group>"; };
+		E86F91CAE5EA2161CC7C2C57AFD94E36 /* Pods-swift-earlgrey-bootcampTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-swift-earlgrey-bootcampTests.modulemap"; sourceTree = "<group>"; };
+		EBC5B16222AD22FED17438B3A0FEFDD6 /* Pods-swift-earlgrey-bootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-earlgrey-bootcamp.debug.xcconfig"; sourceTree = "<group>"; };
+		EDAF59F3AC1487EA72BB0672BCEEFDFF /* Pods-swift-earlgrey-bootcampTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swift-earlgrey-bootcampTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDC8119A9D5B095F3EBD7ACDA15FAEEE /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = EarlGrey/EarlGrey.framework; sourceTree = "<group>"; };
+		F46EFC5CDAF57A92A7B136FFD3525675 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		FC09A19A742E9B715C07608839BC9D4F /* Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compatibility.h; path = OHHTTPStubs/Sources/Compatibility.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E36401CD97871FB069F5AA29A2EAC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A81D90529CF791C1C6CD7C70EDD8ABE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19BC5036D56BF717E84E5D2517687367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BACB4B297316467D77C8EC63CD50525 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CBC846CD2C0E66734972089F31261F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1AC76C093B07F235C538777FF602A9 /* CFNetwork.framework in Frameworks */,
+				E2AAC9FD0874A38F61F71033585807A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B75E1864983B9E027D673CD56ABEF0 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				C22F78340A22D69056F5A58F9F27C948 /* NSURLRequest+HTTPBodyTesting.h */,
+				A3979FBB098FAE91DE0D936D2E82FBFF /* NSURLRequest+HTTPBodyTesting.m */,
+				E7BF86E967C7ECCC8C28BBB4347D3256 /* OHHTTPStubs+NSURLSessionConfiguration.m */,
+				87ED4F88B4FD5203E6E4A6F6B3EDEBEF /* OHHTTPStubsMethodSwizzling.h */,
+				5703A08F0D24CFE06DB572E117BD97F0 /* OHHTTPStubsMethodSwizzling.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		1675D0585B448E4BBE558AB6248FBE94 /* Pods-swift-earlgrey-bootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				371D8FD0038A04C457F9BE15B78A03D7 /* Info.plist */,
+				0658365F1D9D28302B493BC26890C041 /* Pods-swift-earlgrey-bootcamp.modulemap */,
+				44DD2443C5BBAD3E8106945365E7D892 /* Pods-swift-earlgrey-bootcamp-acknowledgements.markdown */,
+				B94F8F474A1EF83A4301D665DAD5FCBB /* Pods-swift-earlgrey-bootcamp-acknowledgements.plist */,
+				04EB9BAEFCF14D8B1BCBBAD58279205B /* Pods-swift-earlgrey-bootcamp-dummy.m */,
+				827D5655C6102CCC45596B54DC8BE273 /* Pods-swift-earlgrey-bootcamp-frameworks.sh */,
+				03C2482EDC5612E2A378593F16DAC6EF /* Pods-swift-earlgrey-bootcamp-resources.sh */,
+				E7A6AF0C01AC3FDCE0C62A09A54BB01A /* Pods-swift-earlgrey-bootcamp-umbrella.h */,
+				EBC5B16222AD22FED17438B3A0FEFDD6 /* Pods-swift-earlgrey-bootcamp.debug.xcconfig */,
+				AB16B32473CC2E2349E1997807B23346 /* Pods-swift-earlgrey-bootcamp.release.xcconfig */,
+			);
+			name = "Pods-swift-earlgrey-bootcamp";
+			path = "Target Support Files/Pods-swift-earlgrey-bootcamp";
+			sourceTree = "<group>";
+		};
+		2EC3B9BF1442F5FBA7CDC1EA13AD067A /* OHHTTPStubs */ = {
+			isa = PBXGroup;
+			children = (
+				F513641C94485802527FEB0E47B43806 /* Core */,
+				4211569CF122780693B1627B4798BE86 /* JSON */,
+				11B75E1864983B9E027D673CD56ABEF0 /* NSURLSession */,
+				F80430F7A5209122E0AF0E70E5C602BC /* OHPathHelpers */,
+				D552583C89AC65BDF4E23C2A3747944F /* Support Files */,
+				CB8E8EC22D547B777504EA197F46689E /* Swift */,
+			);
+			name = OHHTTPStubs;
+			path = OHHTTPStubs;
+			sourceTree = "<group>";
+		};
+		3DC75C8869B42AB93D04871325A0707E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F46EFC5CDAF57A92A7B136FFD3525675 /* CFNetwork.framework */,
+				72913984B3E4B2AD01F71E405D688036 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4211569CF122780693B1627B4798BE86 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				62CB3C0A90AAF6B84B1370C03B5EC064 /* OHHTTPStubsResponse+JSON.h */,
+				D2EB094CE7A65B8CD7CD9BC20A5852A3 /* OHHTTPStubsResponse+JSON.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DC75C8869B42AB93D04871325A0707E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45E78D5C31605D21D35081C682B53806 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B659AA706688D2802AE440B8A2EE0544 /* EarlGrey */,
+				2EC3B9BF1442F5FBA7CDC1EA13AD067A /* OHHTTPStubs */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				45E78D5C31605D21D35081C682B53806 /* Pods */,
+				B0D777FEF8ADEA2D14EAA9D96A49E745 /* Products */,
+				8581C8BC2DFEB8E423497B100564F4BB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8581C8BC2DFEB8E423497B100564F4BB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1675D0585B448E4BBE558AB6248FBE94 /* Pods-swift-earlgrey-bootcamp */,
+				C4D32B635CD0E698261E332A86A2631E /* Pods-swift-earlgrey-bootcampTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B0D777FEF8ADEA2D14EAA9D96A49E745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E6ACF9DB98D34E603C62F27376C0FB6 /* OHHTTPStubs.framework */,
+				CB720D1467365A7EE315107D08E9B1E3 /* Pods_swift_earlgrey_bootcamp.framework */,
+				784365A7C22D0319D14355DA26178825 /* Pods_swift_earlgrey_bootcampTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B659AA706688D2802AE440B8A2EE0544 /* EarlGrey */ = {
+			isa = PBXGroup;
+			children = (
+				F567F74B2B369B88DDA371F118022889 /* Frameworks */,
+			);
+			name = EarlGrey;
+			path = EarlGrey;
+			sourceTree = "<group>";
+		};
+		C4D32B635CD0E698261E332A86A2631E /* Pods-swift-earlgrey-bootcampTests */ = {
+			isa = PBXGroup;
+			children = (
+				49F1A38B171918E00E474EA1212B15EE /* Info.plist */,
+				E86F91CAE5EA2161CC7C2C57AFD94E36 /* Pods-swift-earlgrey-bootcampTests.modulemap */,
+				DDD68108982D786F3F7D63475C71BBD3 /* Pods-swift-earlgrey-bootcampTests-acknowledgements.markdown */,
+				EDAF59F3AC1487EA72BB0672BCEEFDFF /* Pods-swift-earlgrey-bootcampTests-acknowledgements.plist */,
+				DB4920B52527F56166BCF3E5DD5E78E7 /* Pods-swift-earlgrey-bootcampTests-dummy.m */,
+				C8017F65380A274C56E40AD8C9EB015E /* Pods-swift-earlgrey-bootcampTests-frameworks.sh */,
+				E32ADB2E898817C4A9574E54C39936FF /* Pods-swift-earlgrey-bootcampTests-resources.sh */,
+				6D668B59EEB1259E9E9B978326F351A7 /* Pods-swift-earlgrey-bootcampTests-umbrella.h */,
+				6CF9196965EE5F36814E00B8C6D55149 /* Pods-swift-earlgrey-bootcampTests.debug.xcconfig */,
+				C054F2D1C998BD71F3AACCCC513A4CC5 /* Pods-swift-earlgrey-bootcampTests.release.xcconfig */,
+			);
+			name = "Pods-swift-earlgrey-bootcampTests";
+			path = "Target Support Files/Pods-swift-earlgrey-bootcampTests";
+			sourceTree = "<group>";
+		};
+		CB8E8EC22D547B777504EA197F46689E /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5D4CDC88E4BEEFF333996BBBA8925F0F /* OHHTTPStubsSwift.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		D552583C89AC65BDF4E23C2A3747944F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19ADF38771D34F6C27343A12347892FD /* Info.plist */,
+				A40A75113487A8AE9956C4C9514CE0CA /* OHHTTPStubs.modulemap */,
+				148B44A54B06A48AAECD98B16F28E8C8 /* OHHTTPStubs.xcconfig */,
+				238FC8B00E7CAEE96A032B861A4C4524 /* OHHTTPStubs-dummy.m */,
+				72C05441C543BB85633B937FC718ACE0 /* OHHTTPStubs-prefix.pch */,
+				64EE5FAE431A1FB2A3B6B7F755DC229E /* OHHTTPStubs-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHHTTPStubs";
+			sourceTree = "<group>";
+		};
+		F513641C94485802527FEB0E47B43806 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FC09A19A742E9B715C07608839BC9D4F /* Compatibility.h */,
+				865DE88829EC0CA07431418B6BD2B401 /* OHHTTPStubs.h */,
+				440639BA4986EFAD40267CA16E0CED29 /* OHHTTPStubs.m */,
+				6803E567B2AA5D5D0AB9E94A30BADB14 /* OHHTTPStubsResponse.h */,
+				3627F419F724FA3D70C2B2A7533E2042 /* OHHTTPStubsResponse.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		F567F74B2B369B88DDA371F118022889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8119A9D5B095F3EBD7ACDA15FAEEE /* EarlGrey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80430F7A5209122E0AF0E70E5C602BC /* OHPathHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				0B1EE4087E22EC98AF60B3167E44F4A0 /* OHPathHelpers.h */,
+				6C310A8FEB66B86F48A14F055F6C8607 /* OHPathHelpers.m */,
+			);
+			name = OHPathHelpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7EDC225EAA46434222BEFA4890C01D29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8511E3F26B666561914F0DB11D1D116B /* Pods-swift-earlgrey-bootcampTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2880F4EB5CF09C21D8CD4E81B6BF617 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9548720C4DE49F518770CFE2B11DF780 /* Compatibility.h in Headers */,
+				A65B51B819D87EA2E6F5A5ABE71C7FE6 /* NSURLRequest+HTTPBodyTesting.h in Headers */,
+				AE3D655A5F6F57A1748BA3AC8C138CA8 /* OHHTTPStubs-umbrella.h in Headers */,
+				5BA61FFD060E57F79693F2341C329CDC /* OHHTTPStubs.h in Headers */,
+				1ED85E627E4D06AFA96600F569E455DB /* OHHTTPStubsMethodSwizzling.h in Headers */,
+				3BD01F8E61667B00047170FC27494FCE /* OHHTTPStubsResponse+JSON.h in Headers */,
+				DC76380881C3DE10E318E7D7CD60A9B6 /* OHHTTPStubsResponse.h in Headers */,
+				2DF93E32CB27E214194EC9AC1FDD956B /* OHPathHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6E6ED1106A0E15A7F004B214B50516 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB7E2B0C8632933C7D85F62001A8E54 /* Pods-swift-earlgrey-bootcamp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2649DBDEB6EA20BD6084A20895B8987D /* Pods-swift-earlgrey-bootcamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BF6BA726EC0D196613265171AAAFF27 /* Build configuration list for PBXNativeTarget "Pods-swift-earlgrey-bootcamp" */;
+			buildPhases = (
+				EBA7E1D350408C4184A9A93BF167FCFD /* Sources */,
+				0E36401CD97871FB069F5AA29A2EAC67 /* Frameworks */,
+				CF6E6ED1106A0E15A7F004B214B50516 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-swift-earlgrey-bootcamp";
+			productName = "Pods-swift-earlgrey-bootcamp";
+			productReference = CB720D1467365A7EE315107D08E9B1E3 /* Pods_swift_earlgrey_bootcamp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60BE96641E4A89983D41A8520A425B0E /* Pods-swift-earlgrey-bootcampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FDE874E9595A2B8C63E085A995C5C71 /* Build configuration list for PBXNativeTarget "Pods-swift-earlgrey-bootcampTests" */;
+			buildPhases = (
+				A52C8ADB22D4F06D355DD123004AE4C0 /* Sources */,
+				19BC5036D56BF717E84E5D2517687367 /* Frameworks */,
+				7EDC225EAA46434222BEFA4890C01D29 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D941A710D48FEE67540C5A238ACB09E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-swift-earlgrey-bootcampTests";
+			productName = "Pods-swift-earlgrey-bootcampTests";
+			productReference = 784365A7C22D0319D14355DA26178825 /* Pods_swift_earlgrey_bootcampTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		748F1C7F61D88F3FB355A8E829489671 /* OHHTTPStubs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C85E9BCC67642A6B5D72777C9A2EFC1C /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
+			buildPhases = (
+				D94858D600E69288339419A8660D072D /* Sources */,
+				64CBC846CD2C0E66734972089F31261F /* Frameworks */,
+				A2880F4EB5CF09C21D8CD4E81B6BF617 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OHHTTPStubs;
+			productName = OHHTTPStubs;
+			productReference = 6E6ACF9DB98D34E603C62F27376C0FB6 /* OHHTTPStubs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B0D777FEF8ADEA2D14EAA9D96A49E745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				748F1C7F61D88F3FB355A8E829489671 /* OHHTTPStubs */,
+				2649DBDEB6EA20BD6084A20895B8987D /* Pods-swift-earlgrey-bootcamp */,
+				60BE96641E4A89983D41A8520A425B0E /* Pods-swift-earlgrey-bootcampTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A52C8ADB22D4F06D355DD123004AE4C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F513FA6EAA76CCBA9BF62B2CBCF98F /* Pods-swift-earlgrey-bootcampTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94858D600E69288339419A8660D072D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F71753B13D3D22D95DC74CF578F74B07 /* NSURLRequest+HTTPBodyTesting.m in Sources */,
+				6C9B33BB7CA816E3DDB0BD5AF81D90E2 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */,
+				76BDFCB4E7BECB554EA7FBF9FC0D7576 /* OHHTTPStubs-dummy.m in Sources */,
+				AAEC3DDBD63163C44B217D72F96BF431 /* OHHTTPStubs.m in Sources */,
+				CDF4CE481A3C924312F609D318B59E4C /* OHHTTPStubsMethodSwizzling.m in Sources */,
+				F847F31E3971B4F7F45953086B6431F6 /* OHHTTPStubsResponse+JSON.m in Sources */,
+				F2A20C707DE9EA319D2701D0E543F420 /* OHHTTPStubsResponse.m in Sources */,
+				1296D7032FEB275246E0E2EB83D4E58C /* OHHTTPStubsSwift.swift in Sources */,
+				BBF98824C62AC3D4E7727B83F3E8B0A3 /* OHPathHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA7E1D350408C4184A9A93BF167FCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3545AAC096798FF21985BFBD5217B460 /* Pods-swift-earlgrey-bootcamp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D941A710D48FEE67540C5A238ACB09E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHHTTPStubs;
+			target = 748F1C7F61D88F3FB355A8E829489671 /* OHHTTPStubs */;
+			targetProxy = 74556C46F26A97DB189806C4D9566C5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15DA4AF26AA925D8C0E3E364472FF261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C054F2D1C998BD71F3AACCCC513A4CC5 /* Pods-swift-earlgrey-bootcampTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-earlgrey-bootcampTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-earlgrey-bootcampTests/Pods-swift-earlgrey-bootcampTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_swift_earlgrey_bootcampTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2A2B2C73FB5451DFB3A53F78FB199285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBC5B16222AD22FED17438B3A0FEFDD6 /* Pods-swift-earlgrey-bootcamp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-earlgrey-bootcamp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-earlgrey-bootcamp/Pods-swift-earlgrey-bootcamp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_swift_earlgrey_bootcamp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		422CA072F3E07A0DAA4268D2F3458FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF9196965EE5F36814E00B8C6D55149 /* Pods-swift-earlgrey-bootcampTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-earlgrey-bootcampTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-earlgrey-bootcampTests/Pods-swift-earlgrey-bootcampTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_swift_earlgrey_bootcampTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A40BFEA8A3FA49CAA6D8A9A16A7157D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148B44A54B06A48AAECD98B16F28E8C8 /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC73BD109885A8F8A2CBA2439AEFE10F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148B44A54B06A48AAECD98B16F28E8C8 /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D803D9A699F702E7D7AD6499561FE57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB16B32473CC2E2349E1997807B23346 /* Pods-swift-earlgrey-bootcamp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-earlgrey-bootcamp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-earlgrey-bootcamp/Pods-swift-earlgrey-bootcamp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_swift_earlgrey_bootcamp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
+				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FDE874E9595A2B8C63E085A995C5C71 /* Build configuration list for PBXNativeTarget "Pods-swift-earlgrey-bootcampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422CA072F3E07A0DAA4268D2F3458FE2 /* Debug */,
+				15DA4AF26AA925D8C0E3E364472FF261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BF6BA726EC0D196613265171AAAFF27 /* Build configuration list for PBXNativeTarget "Pods-swift-earlgrey-bootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2B2C73FB5451DFB3A53F78FB199285 /* Debug */,
+				D803D9A699F702E7D7AD6499561FE57C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C85E9BCC67642A6B5D72777C9A2EFC1C /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC73BD109885A8F8A2CBA2439AEFE10F /* Debug */,
+				A40BFEA8A3FA49CAA6D8A9A16A7157D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

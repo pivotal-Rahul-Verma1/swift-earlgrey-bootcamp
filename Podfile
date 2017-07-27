@@ -8,8 +8,12 @@ target 'swift-earlgrey-bootcamp' do
   # Pods for swift-earlgrey-bootcamp
 
   target 'swift-earlgrey-bootcampTests' do
+    project 'swift-earlgrey-bootcamp'
+
+    use_frameworks!
     inherit! :search_paths
-    # Pods for testing
-  end
+    pod 'EarlGrey' 
+    pod 'OHHTTPStubs/Swift'
+ end
 
 end

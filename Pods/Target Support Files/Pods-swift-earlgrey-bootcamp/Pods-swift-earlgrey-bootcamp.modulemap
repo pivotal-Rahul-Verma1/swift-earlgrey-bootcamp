@@ -1,0 +1,6 @@
+framework module Pods_swift_earlgrey_bootcamp {
+  umbrella header "Pods-swift-earlgrey-bootcamp-umbrella.h"
+
+  export *
+  module * { export * }
+}
