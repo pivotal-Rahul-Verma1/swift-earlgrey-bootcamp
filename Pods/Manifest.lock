@@ -1,5 +1,5 @@
 PODS:
-  - EarlGrey (1.10.0)
+  - EarlGrey (1.11.0)
   - OHHTTPStubs/Core (6.0.0)
   - OHHTTPStubs/Default (6.0.0):
     - OHHTTPStubs/Core
@@ -19,7 +19,7 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
 
 SPEC CHECKSUMS:
-  EarlGrey: aa0c471344aec49ea5c51fe5702efaf25c720f47
+  EarlGrey: 7515b05c7f448374ad7ca2c454f3ea566fcb1a2f
   OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
 
 PODFILE CHECKSUM: 3366bc97be5048cea4749cd392638b508f1915d9

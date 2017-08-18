@@ -8,6 +8,7 @@
 
 import XCTest
 import EarlGrey
+import OHHTTPStubs
 
 @testable import swift_earlgrey_bootcamp
 
@@ -16,22 +17,14 @@ class swift_earlgrey_bootcampTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
+        stub(condition: isHost("api.openweathermap.org")) { _ in
+            // Stub it with our "wsresponse.json" stub file (which is in same bundle as self)
+            let stubPath = OHPathForFile("data.json", type(of: self))
+            return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
+        }
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
-
-    
- //   func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
- //   }
-    
- //   func testPerformanceExample() {
-        // This is an example of a performance test case.
-   //     self.measure {
-            // Put the code you want to measure the time of here.
-    //    }
-   // }
     
     func testHomeUIPresence()
     {
@@ -130,6 +123,21 @@ class swift_earlgrey_bootcampTests: XCTestCase {
             .perform(grey_tap())
         
         // click on home button
+
+
+
+        EarlGrey.select(elementWithMatcher: grey_kindOfClass(UITableView.self))
+            .perform(grey_tap())
+
+        EarlGrey.select(elementWithMatcher: grey_descendant(grey_kindOfClass(UITableView.self))).atIndex(0)
+            .perform(grey_tap())
+        
+        EarlGrey.select(elementWithMatcher: grey_text("Temperature: 697.77 K"))
+            .assert(grey_sufficientlyVisible())
+        EarlGrey.select(elementWithMatcher: grey_text("Pressure: 505.0 hPa"))
+            .assert(grey_sufficientlyVisible())
+        EarlGrey.select(elementWithMatcher: grey_text("Humidity: 40.0 %"))
+            .assert(grey_sufficientlyVisible())
         EarlGrey.select(elementWithMatcher: grey_allOf([grey_accessibilityTrait(UIAccessibilityTraitButton),
                                                         grey_accessibilityLabel("Home"), grey_sufficientlyVisible()]))
             .perform(grey_tap())

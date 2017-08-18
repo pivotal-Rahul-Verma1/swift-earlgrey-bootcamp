@@ -16,6 +16,7 @@
 		AE3706801EC0B8D200503AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE37067F1EC0B8D200503AF0 /* Assets.xcassets */; };
 		AE3706831EC0B8D200503AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3706811EC0B8D200503AF0 /* LaunchScreen.storyboard */; };
 		AE37068E1EC0B8D200503AF0 /* swift_earlgrey_bootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37068D1EC0B8D200503AF0 /* swift_earlgrey_bootcampTests.swift */; };
+		AE42F1941F473543004D07AE /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AE42F1931F473543004D07AE /* data.json */; };
 		AE94E21C1EC0E29900EC3C73 /* Step2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94E21B1EC0E29900EC3C73 /* Step2TableViewCell.swift */; };
 		AE94E21E1EC0E4D800EC3C73 /* Step2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94E21D1EC0E4D800EC3C73 /* Step2TableViewController.swift */; };
 		AE94E2201EC0FF0F00EC3C73 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94E21F1EC0FF0F00EC3C73 /* Step3ViewController.swift */; };
@@ -73,6 +74,7 @@
 		AE3706891EC0B8D200503AF0 /* swift-earlgrey-bootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-earlgrey-bootcampTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE37068D1EC0B8D200503AF0 /* swift_earlgrey_bootcampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_earlgrey_bootcampTests.swift; sourceTree = "<group>"; };
 		AE37068F1EC0B8D200503AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE42F1931F473543004D07AE /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../../Desktop/data.json; sourceTree = "<group>"; };
 		AE487EAF1F27812500820B8D /* swift-earlgrey-bootcampTests-1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-earlgrey-bootcampTests-1.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE94E21B1EC0E29900EC3C73 /* Step2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step2TableViewCell.swift; sourceTree = "<group>"; };
 		AE94E21D1EC0E4D800EC3C73 /* Step2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step2TableViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				AE37068D1EC0B8D200503AF0 /* swift_earlgrey_bootcampTests.swift */,
 				AE37068F1EC0B8D200503AF0 /* Info.plist */,
+				AE42F1931F473543004D07AE /* data.json */,
 				26F2353C3B8E14DDA1888CE1 /* EarlGrey.swift */,
 			);
 			path = "swift-earlgrey-bootcampTests";
@@ -307,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE42F1941F473543004D07AE /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +699,7 @@
 				AE487EB71F27812500820B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
